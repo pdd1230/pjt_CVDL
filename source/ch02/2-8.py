@@ -7,7 +7,7 @@ if img is None:
     sys.exit('파일을 찾을 수 없습니다.')
     
 def draw(event,x,y,flags,param):
-    global ix,iy
+    global ix,iy   # 전역변수
     
     if event==cv.EVENT_LBUTTONDOWN:	# 마우스 왼쪽 버튼 클릭했을 때 초기 위치 저장
         ix,iy=x,y
